@@ -1,0 +1,89 @@
+luaLarpID = "ID HERE"; -- Put your id here you can't share your own id
+
+getgenv().Essential = {
+    CameraAim = {
+        Enabled = true,
+        CamPart = "HumanoidRootPart",
+        Prediction = "0.1481",
+        Smoothness = "1",
+        ShakeAmount = "0",
+        AirPrediction = "0.1415911",
+        AutoPrediction = true,
+        AntiGroundShots = true,
+    },
+    FOV = {
+        Radius = "2",
+        Visible = false,
+    },
+    TargetAim = {
+        Enabled = false,
+        Prediction = "0.13",
+        TargetPart = "HumanoidRootPart",
+        JumpOffSet = "0.03",
+        AirPrediction = "0.1333",
+    },
+    Silent = {
+        Enabled = true,
+        SilentPart = "HumanoidRootPart",
+        Prediction = "0.1201",
+        AirPrediction = "0.52",
+        Resolver = true,
+        AntiGroundShots = true,
+        JumpOffSet = "0.09",
+    },
+    Offset = {
+        JumpOffset = "0.33",
+        FallOffset = "0.33",
+    },
+    JumpDirection = {
+        X = "0",
+        Y = "0",
+        Z = "0",
+    },
+    Misc = {
+        Resolver = false,
+        AntiGroundShots = false,
+        AntiDelay = false,
+        AutoShoot = false,
+    },
+    Texture = {
+        Enabled = true,
+        Material = Enum.Material.Brick,
+        UseColor = true,
+        Color = Color3.fromRGB(255, 0, 0),
+    },
+    Line = {
+        Enabled = true,
+        Color = Color3.fromRGB(0, 0, 0),
+        Material = "ForceField",
+        Speed = 1,
+        Width = 0.3,
+        TransStart = 0,
+        TransEnd = 5,
+        MinLength = 0.1,
+    },
+    Air = {
+        AutoAir = true,
+        Delay = "0",
+    },
+    HitDetect = {
+        HitSound = true,
+        Sound = "Rust",
+        Volume = "50",
+    },
+    Check = {
+        KoCheck = false,
+        WallCheck = false,
+        FriendsCheck = true,-- not working
+    },
+    Easing = {
+        EasingStyle = "Bounce",-- or use enum remove "",
+        EasingDirection = "InOut",-- or use enum remove "",
+    },
+    Setting = {
+        Button = true,-- if true your gay
+        Tool = false,-- Idk you decide
+   }
+}
+
+loadstring(game:HttpGet("https://essential.get/loader.lua"))()
